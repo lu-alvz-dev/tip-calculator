@@ -1,5 +1,7 @@
 /* variables */
 
 //DOM elements
-const amount = documentGetElementById("input-bill");
-const tipPorcentage = querySelectorAll(".porcentage-selected");
+const amount = document.getElementById("input-bill");
+const tipPorcentage = document.querySelectorAll(".porcentage-selected");
+const tipAmount = document.getElementById("tip-amount");
+const totalAmount = document.getElementById("total-amount");
