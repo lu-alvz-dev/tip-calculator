@@ -31,3 +31,11 @@ button {
 }
 
 /*styles*/
+
+.card {
+  background-color: #fff;
+  padding: 2.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
