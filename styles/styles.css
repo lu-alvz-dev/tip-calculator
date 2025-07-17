@@ -69,3 +69,24 @@ h2 {
 p {
   font-weight: 550;
 }
+
+.bill-amount,
+.tip-amount,
+.total-cost {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tip-percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.porcentage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
