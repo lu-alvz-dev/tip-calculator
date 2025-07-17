@@ -10,19 +10,26 @@
   <body>
     <article class="card">
       <h2>Tip Calculator</h2>
-      <input type="text" placeholder="Bill mount" id="input-bill" />
-      <p>Select tip %</p>
+      <section class="bill-amount">
+        <p>Bill amount</p>
+        <input type="text" value="$ 0.00" id="input-bill" />
+      </section>
       <section class="tip-percentage">
+        <p>Select tip %</p>
         <button>5%</button>
         <button>10%</button>
         <button>15%</button>
         <button>20%</button>
         <button>25%</button>
       </section>
-      <p>Tip amount</p>
-      <input type="text" id="tip-amount" />
-      <p>Total cost</p>
-      <input type="text" id="total-cost" />
+      <section class="tip-amount">
+        <p>Tip amount</p>
+        <input type="text" id="tip-amount" />
+      </section>
+      <section class="total-cost">
+        <p>Total cost</p>
+        <input type="text" id="total-cost" />
+      </section>
       <button class="calculate">Calculate</button>
     </article>
   </body>
