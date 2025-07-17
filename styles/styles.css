@@ -67,6 +67,10 @@ h2 {
   font-size: 2.5rem;
 }
 
+.calculate:hover {
+  background-color: #2b8ad4;
+}
+
 p {
   font-weight: 550;
   font-size: 2rem;
