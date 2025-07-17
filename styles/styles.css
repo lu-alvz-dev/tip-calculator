@@ -12,8 +12,9 @@ html {
 }
 
 body {
-  font-familiy: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: 1.6rem;
   color: #444;
   background-color: #f3f3f3;
   display: flex;
@@ -24,10 +25,12 @@ body {
 
 input {
   outline: none;
+  font-size: inherit;
 }
 
 button {
   cursor: pointer;
+  font-size: inherit;
 }
 
 /*styles*/
@@ -40,4 +43,9 @@ button {
   gap: 1rem;
   border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+input {
+  border-radius: 1rem;
+  padding: 1rem;
 }
