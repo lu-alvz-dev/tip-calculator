@@ -50,12 +50,20 @@ input {
   border-radius: 1rem;
   padding: 1rem;
 }
+h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
 
 .calculate {
   background-color: #3da9fc;
   padding: 1rem;
   border-radius: 1rem;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2rem;
+}
+
+p {
+  font-weight: 550;
 }
