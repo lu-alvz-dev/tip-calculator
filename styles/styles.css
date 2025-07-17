@@ -49,6 +49,7 @@ button {
 input {
   border-radius: 1rem;
   padding: 1rem;
+  border: 1px solid #ccc;
 }
 h1 {
   font-weight: 700;
