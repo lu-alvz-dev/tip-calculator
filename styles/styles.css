@@ -22,4 +22,12 @@ body {
   min-height: 100vh;
 }
 
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 /*styles*/
