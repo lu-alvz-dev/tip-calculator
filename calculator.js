@@ -8,18 +8,17 @@ const totalAmount = document.getElementById("total-cost");
 const porcentage = document.querySelector(".porcentage");
 const calculate = document.getElementById("calculate");
 
-function selectTip() {
-  tipPorcentage.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const selected = parseFloat(btn.dataset.tip);
-      const bill = parseFloat(amount.value.replace(/[^0-9.]/g, ""));
-      const tip = bill * (selected / 100);
-      tipAmount.value = "$ " + tip.toFixed(2);
-      totalAmount.value = "$ " + (bill + tip).toFixed(2);
-    });
+let selected = 0;
+
+tipPorcentage.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    selected = parseFloat(btn.dataset.tip);
   });
-}
+});
 
 calculate.addEventListener("click", () => {
-  selectTip();
+  const bill = parseFloat(amount.value.replace(/[^0-9.]/g, ""));
+  const tip = bill * (selected / 100);
+  tipAmount.value = "$ " + tip.toFixed(2);
+  totalAmount.value = "$ " + (bill + tip).toFixed(2);
 });
