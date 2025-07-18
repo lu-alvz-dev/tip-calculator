@@ -10,6 +10,10 @@ const calculate = document.getElementById("calculate");
 
 let selected = 0;
 
+amount.addEventListener("input", () => {
+  porcentage.classList.add("active");
+});
+
 tipPorcentage.forEach((btn) => {
   btn.addEventListener("click", () => {
     selected = parseFloat(btn.dataset.tip);
