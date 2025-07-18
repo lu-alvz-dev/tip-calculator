@@ -110,7 +110,8 @@ p {
 }
 
 .active button {
-  background-color: #3da9fc;
-  color: #fff;
-  border: none;
+  background-color: #fff;
+  color: #444;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
