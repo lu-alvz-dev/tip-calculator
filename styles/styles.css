@@ -98,12 +98,18 @@ p {
 }
 
 .porcentage button {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #ccc;
+  border: 1px solid #a9a9a9;
   padding: 1rem;
   border-radius: 1rem;
-  color: #444;
+  color: gray;
   font-weight: 550;
   font-size: 1.8rem;
   flex-grow: 1;
+}
+
+.active button {
+  background-color: #3da9fc;
+  color: #fff;
+  border: none;
 }
