@@ -12,6 +12,6 @@ tipPorcentage.forEach((btn) => {
     const selected = parseFloat(btn.dataset.five);
     const bill = parseFloat(amount.value);
     const tip = bill * (selected / 100);
-    tipAmount.value = tip.toFixed(2);
+    tipAmount.value = "$" + tip.toFixed(2);
   });
 });
