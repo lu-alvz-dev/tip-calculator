@@ -6,13 +6,12 @@ const tipPorcentage = document.querySelectorAll(".porcentage-selected");
 const tipAmount = document.getElementById("tip-amount");
 const totalAmount = document.getElementById("total-cost");
 
-let selected = 0;
-let bill = 0;
-
+//functionality to select tip porcentage
 tipPorcentage.forEach((btn) => {
   btn.addEventListener("click", () => {
-    selected = parseFloat(btn.dataset.five);
-    bill = parseFloat(amount.value);
-    tipAmount.value = bill * (selected / 100);
+    const selected = parseFloat(btn.dataset.five);
+    const bill = parseFloat(amount.value);
+    const tip = bill * (selected / 100);
+    tipAmount.value = tip.toFixed(2);
   });
 });
