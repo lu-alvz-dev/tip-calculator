@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   color: #444;
-  background-color: #f3f3f3;
+  background-color: #d8d8d8ca;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -59,7 +59,8 @@ h2 {
 }
 
 .calculate {
-  background-color: #3da9fc;
+  background-color: #ccc;
+  color: gray;
   padding: 1rem;
   border-radius: 1rem;
   color: #fff;
