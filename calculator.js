@@ -11,7 +11,17 @@ const calculate = document.getElementById("calculate");
 let selected = 0;
 
 amount.addEventListener("input", () => {
-  if (amount.value.replace(/[^0-9.]/g, "") === "") return;
+  tipAmount.value = "";
+  totalAmount.value = "";
+  if (amount.value.replace(/[^0-9.]/g, "") === "") {
+    porcentage.classList.remove("active");
+    tipPorcentage.forEach((b) => {
+      b.classList.remove("selected");
+      calculate.classList.remove("active");
+    });
+
+    return;
+  }
   porcentage.classList.add("active");
 });
 
