@@ -11,6 +11,7 @@ const calculate = document.getElementById("calculate");
 let selected = 0;
 
 amount.addEventListener("input", () => {
+  if (amount.value.replace(/[^0-9.]/g, "") === "") return;
   porcentage.classList.add("active");
 });
 
@@ -28,6 +29,7 @@ tipPorcentage.forEach((btn) => {
 
 calculate.addEventListener("click", () => {
   const bill = parseFloat(amount.value.replace(/[^0-9.]/g, ""));
+  if (!porcentage.classList.contains("active") || isNaN(bill)) return;
   const tip = bill * (selected / 100);
   tipAmount.value = "$ " + tip.toFixed(2);
   totalAmount.value = "$ " + (bill + tip).toFixed(2);
