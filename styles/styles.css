@@ -122,3 +122,10 @@ p {
   border: 1px solid #ccc;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
+
+button.selected {
+  background-color: #2b8ad4;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
