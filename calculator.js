@@ -16,6 +16,7 @@ amount.addEventListener("input", () => {
 
 tipPorcentage.forEach((btn) => {
   btn.addEventListener("click", () => {
+    calculate.classList.add("active");
     selected = parseFloat(btn.dataset.tip);
   });
 });
