@@ -33,6 +33,8 @@ tipPorcentage.forEach((btn) => {
       b.classList.remove("selected");
     });
     btn.classList.add("selected");
+    tipAmount.value = "";
+    totalAmount.value = "";
     selected = parseFloat(btn.dataset.tip);
   });
 });
