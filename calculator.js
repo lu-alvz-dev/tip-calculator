@@ -16,6 +16,7 @@ amount.addEventListener("input", () => {
 
 tipPorcentage.forEach((btn) => {
   btn.addEventListener("click", () => {
+    if (!porcentage.classList.contains("active")) return;
     calculate.classList.add("active");
     tipPorcentage.forEach((b) => {
       b.classList.remove("selected");
