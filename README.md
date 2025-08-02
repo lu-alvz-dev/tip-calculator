@@ -39,3 +39,4 @@ To run this project locally:
 git clone https://github.com/your-username/tip-calculator.git
 cd tip-calculator
 open index.html
+
