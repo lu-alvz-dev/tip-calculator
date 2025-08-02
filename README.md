@@ -27,6 +27,10 @@ A responsive and intuitive tip calculator built using **HTML**, **CSS**, and **J
 
 ---
 
+## 🌐 Live Demo
+
+[👉 View Live Demo](https://lu-alvz-dev.github.io/tip-calculator/) 
+
 ## 📂 Getting Started
 
 To run this project locally:
